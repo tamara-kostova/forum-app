@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load i18n %}
+{% load l10n %}
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div class="red">{% translate "This should be red." %}</div>
+    <div>
+        <div>{{today}}</div>
+    </div>
+    <div>
+        <div>{{today|unlocalize}}</div>
+    </div>
+</body>
+</html>
